@@ -4,22 +4,16 @@ public class Amazon
 {
 	private IDeliveryService service;
 	
-	
-	//Constructor Injection
-	public Amazon(IDeliveryService service) {
-		super();
-		this.service = service;
-	}
-	
-	
-
-	public Amazon() {
-		super();
-		
-	}
-
-
-
+//	//Constructor Injection
+//		public Amazon(IDeliveryService service) {
+//			super();
+//			this.service = service;
+//		}
+//		
+//		public Amazon() 
+//		{
+//			
+//		}
 	//Setter Injection
 	public void setService(IDeliveryService service) //IDeliveryService service=new FedEx()
 	{
@@ -30,8 +24,7 @@ public class Amazon
 
 	public Boolean deliverTheProduct(Double amount)
 	{
-//		Boolean status=service.deliveryProduct(amount);
-//		return status;
+
 		return service.deliveryProduct(amount);
 		
 	}
